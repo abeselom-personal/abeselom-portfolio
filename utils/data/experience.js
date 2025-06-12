@@ -1,20 +1,38 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    title: 'Backend-focused Technical Project Manager',
+    company: 'Abol Software',
+    duration: '(Jan 2025 - Dec 2025)',
   },
   {
     id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
+    title: 'Freelance Full-Stack Developer',
+    company: 'Upwork',
+    duration: '(Jan 2025 - Present)',
   },
   {
     id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
+    title: 'Mobile Developer',
+    company: 'Ethio Clicks, Los Angeles',
+    duration: '(Jan 2023 - Oct 2023)',
+  },
+  {
+    id: 4,
+    title: 'Fullstack Intern',
+    company: 'Afronex Tech Hub, Dire Dawa',
+    duration: '(Dec 2023 - Jun 2024)',
+  },
+  {
+    id: 5,
+    title: 'Programming Teacher (Charity Program)',
+    company: 'Tana Haik High-school, Bahir Dar',
+    duration: '(Jan 2025 - May 2025)',
+  },
+  {
+    id: 6,
+    title: 'Founder / Software Engineer',
+    company: 'Self-Employed (Abol Software + Side Projects)',
+    duration: '(2021 - Present)',
   }
 ]

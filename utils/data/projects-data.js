@@ -1,52 +1,131 @@
 export const projectsData = [
-    {
-        id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-    },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
+  {
+    id: 1,
+    name: 'AI Powered Financial App',
+    description:
+      "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
+    tools: [
+      'Express',
+      'MongoDB',
+      'OpenAI API',
+      'AWS SES',
+      'AWS S3',
+      'Node Mailer',
+      'Joi',
+      'Puppeteer',
+      'EC2',
+      'PM2',
+      'Nginx',
+    ],
+    role: 'Backend Developer',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 2,
+    name: 'Real-Time Vehicle Tracking System',
+    description:
+      'Developed a system for tracking 1,000–5,000+ vehicles in real time. Used WebSockets for location updates every 2–4 seconds. Redis handled real-time data, and PostgreSQL with PostGIS stored historical locations. Efficient data deduplication and querying for nearby vehicles was implemented.',
+    tools: [
+      'Go',
+      'Gin',
+      'WebSocket',
+      'Redis',
+      'PostgreSQL',
+      'PostGIS',
+      'Docker',
+      'Nginx',
+    ],
+    role: 'Lead Backend Developer',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 3,
+    name: 'Flutter Dynamic Path Tracker',
+    description:
+      'Built a Flutter mobile app using WebSockets to track and update passenger amounts in real-time per path. Integrated Riverpod for state management. Backend sends dynamic updates for increment/decrement actions.',
+    tools: ['Flutter', 'WebSocket', 'Riverpod', 'Go', 'Gin'],
+    role: 'Full Stack Developer',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 4,
+    name: 'Construction Management System',
+    description:
+      'Designed and developed a system with account and catalog management, where each catalog has rates, markup, margin, and unit pricing. Projects contain budget tracking and financial overview tabs.',
+    tools: ['React', 'Node.js', 'Express', 'MySQL', 'Prisma'],
+    role: 'Full Stack Developer',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 5,
+    name: 'School Management System',
+    description:
+      'Developed and deployed a full-featured school management system with student, teacher, finance, and class management modules. Used modern web stack and mobile support.',
+    tools: ['React', 'Node.js', 'Express', 'MySQL', 'Flutter'],
+    role: 'Lead Developer',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 6,
+    name: 'Logistics Management Platform',
+    description:
+      'Created a logistics software system for managing fleet operations, package routing, delivery tracking, and driver coordination across mobile and web platforms.',
+    tools: ['React', 'Node.js', 'Express', 'Flutter', 'PostgreSQL'],
+    role: 'Project Manager & Full Stack Developer',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 7,
+    name: 'Budget Transfer System',
+    description:
+      'Built for a regional finance bureau to manage and track budget transfers and approvals. Included user roles, financial validations, and audit history.',
+    tools: ['Next.js', 'NestJS', 'PostgreSQL'],
+    role: 'Backend Developer & Team Lead',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 8,
+    name: 'Boilerplate Code Generator',
+    description:
+      'Planned a dynamic boilerplate generator for Go Gin and Express. Lets users pick stack components (DB, Redis, Docker) with a modular design and full setup automation.',
+    tools: ['Go', 'Gin', 'Express', 'CLI', 'Docker', 'PostgreSQL', 'MongoDB'],
+    role: 'System Designer & Developer',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 9,
+    name: 'Queue Management System with Analytics',
+    description:
+      'Built a real-time queue management system using Go Gin for stations and drivers. Integrated RabbitMQ for background task processing and analytics route for reporting.',
+    tools: ['Go', 'Gin', 'RabbitMQ', 'Redis', 'PostgreSQL'],
+    role: 'Backend Engineer',
+    code: '',
+    demo: '',
+  },
+  {
+    id: 10,
+    name: 'Social Media & E-commerce Manager SaaS',
+    description:
+      'Planned a SaaS platform combining social media management and e-commerce dashboard. Features include post scheduling, account management, scrapers, AI captions, and engagement predictions.',
+    tools: [
+      'Next.js',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'OpenAI API',
+      'Docker',
+      'Stripe',
+    ],
+    role: 'Product Architect',
+    code: '',
+    demo: '',
+  },
 ];
-
-
-// Do not remove any property.
-// Leave it blank instead as shown below
-
-// {
-//     id: 1,
-//     name: '',
-//     description: "",
-//     tools: [],
-//     role: '',
-//     code: '',
-//     demo: '',
-// },
