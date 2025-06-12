@@ -1,9 +1,9 @@
 // @flow strict
 
 import * as React from 'react';
+import Image from 'next/image';
 
 function ProjectCard({ project }) {
-
   return (
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
       <div className="flex flex-row">
@@ -21,6 +21,23 @@ function ProjectCard({ project }) {
         </p>
       </div>
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
+        <div className="flex overflow-x-auto space-x-4 p-4 scrollbar-hide">
+          {project.images?.length > 0 && project.images.map((img, idx) => (
+            <div
+              key={idx}
+              className="min-w-[150px] md:min-w-[200px] flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 transform hover:scale-105 active:scale-100"
+            >
+              <Image
+                src={img}
+                alt={`project-img-${idx}`}
+                loading="lazy"
+                width={200}
+                height={130}
+                className="w-[150px] h-[100px] md:w-[200px] md:h-[130px] object-cover rounded-md"
+              />
+            </div>
+          ))}
+        </div>
         <code className="font-mono text-xs md:text-sm lg:text-base">
           <div className="blink">
             <span className="mr-2 text-pink-500">const</span>
@@ -30,26 +47,22 @@ function ProjectCard({ project }) {
           </div>
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-            <span className="text-gray-400">{`'`}</span>
+            <span className="text-gray-400">&#39;</span>
             <span className="text-amber-300">{project.name}</span>
-            <span className="text-gray-400">{`',`}</span>
+            <span className="text-gray-400">&#39;,</span>
           </div>
-
           <div className="ml-4 lg:ml-8 mr-2">
             <span className=" text-white">tools:</span>
-            <span className="text-gray-400">{` ['`}</span>
-            {
-              project.tools.map((tag, i) => (
-                <React.Fragment key={i}>
-                  <span className="text-amber-300">{tag}</span>
-                  {
-                    project.tools?.length - 1 !== i &&
-                    <span className="text-gray-400">{`', '`}</span>
-                  }
-                </React.Fragment>
-              ))
-            }
-            <span className="text-gray-400">{"],"}</span>
+            <span className="text-gray-400">[&#39;</span>
+            {project.tools.map((tag, i) => (
+              <React.Fragment key={i}>
+                <span className="text-amber-300">{tag}</span>
+                {project.tools?.length - 1 !== i && (
+                  <span className="text-gray-400">&#39;, &#39;</span>
+                )}
+              </React.Fragment>
+            ))}
+            <span className="text-gray-400">&#39;],</span>
           </div>
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
@@ -61,11 +74,11 @@ function ProjectCard({ project }) {
             <span className="text-cyan-400">{' ' + project.description}</span>
             <span className="text-gray-400">,</span>
           </div>
-          <div><span className="text-gray-400">{`};`}</span></div>
+          <div><span className="text-gray-400">{'};'}</span></div>
         </code>
       </div>
     </div>
   );
-};
+}
 
 export default ProjectCard;
